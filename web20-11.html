@@ -1,0 +1,310 @@
+﻿
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Header 20/11</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #fff;
+  }
+  .teacher-day-header {
+    width: 100%;
+    height: 800px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .teacher-day-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.55) 100%);
+    pointer-events: none;
+  }
+
+  .center-text {
+    position: relative;              
+    z-index: 2;
+    text-align: center;
+    padding: 28px 24px;
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .center-text .greeting {
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(40px, 6.5vw, 96px);
+    line-height: 0.95;
+    margin: 0;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #ffd166, #ffb703, #ff7b00);
+    -webkit-background-clip: text;
+    background-clip:text;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.55);
+  }
+  .center-text .subtitle {
+    font-weight: 700;
+    font-size: clamp(16px, 2.2vw, 24px);
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.95);
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 8px 18px;
+    border-radius: 28px;
+    background: rgba(0,0,0,0.18);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  }
+  .center-text .tagline {
+    font-size: clamp(22px, 3.2vw, 48px); 
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 14px 0 0;
+    padding: 8px 16px;
+    background: linear-gradient(90deg, #fff9e6 0%, #ffd166 45%, #ffb703 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+    text-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.06);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    max-width: 960px;
+    text-align: center;
+  }
+  .center-text::after {
+    content: "";
+    width: 220px;
+    height: 6px;
+    border-radius: 6px;
+    margin-top: 18px;
+    background: linear-gradient(90deg, rgba(255,209,102,0.95), rgba(255,139,0,0.95));
+    box-shadow: 0 6px 18px rgba(255,139,0,0.12);
+  }
+
+  .right-logos {
+    position: absolute;
+    top: 20px; 
+    right: 20px;
+    display: flex;
+    gap: 20px;
+    z-index: 3;
+  }
+
+  .picture {
+    justify-content:center;
+    display: flex;
+    gap: 10px;
+  }
+
+  .picture img {
+    width: 500px;
+    height: auto;
+  }
+
+  .right-logos img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+    background: rgba(255,255,255,0.02);
+  }
+
+  /* Text content styling */
+  .content {
+    padding: 40px 20px 80px;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.75;
+    font-size: 18px;
+    color: #fff;
+    backdrop-filter: blur(6px);
+  }
+
+  .content p {
+    margin-bottom: 18px;
+  }
+
+  @media (max-width: 720px) {
+    .teacher-day-header {
+      height: 520px;
+      background-size: 110% auto; 
+      background-position: center;
+      background-attachment: scroll;
+    }
+    .center-text { transform: translateY(18px); }
+    .center-text .tagline {
+      font-size: clamp(18px, 4.2vw, 26px); 
+      padding: 6px 10px;
+      margin-top: 10px;
+    }
+    .right-logos img { height: 56px; }
+    .content { font-size: 16px; padding: 24px; }
+  }
+</style>
+</head>
+
+<body>
+ <header class="teacher-day-header">
+   <div class="center-text">
+     <h1 class="greeting">Tri ân Nhà Giáo</h1>
+     <div class="subtitle">Chào mừng ngày Nhà Giáo Việt Nam 20/11</div>
+     <div class="tagline">Kính chúc thầy cô luôn mạnh khỏe — sức truyền cảm hứng vô tận</div>
+   </div>
+
+   <div class="right-logos">
+     <img src="logo-ndc.jpg" alt="Logo THPT Nguyễn Đình Chiểu">
+     <img src="logo-clb.jpg" alt="Logo CLB Tin học">
+   </div>
+ </header>
+
+  <div class="teacher-message">
+    <h2 class="section-title">Lời Tri Ân 20/11</h2>
+    <p>Nhân ngày Nhà giáo Việt Nam 20/11, xin gửi đến quý thầy cô những lời tri ân chân thành và sâu sắc nhất. Cảm ơn thầy cô đã luôn kiên nhẫn, tận tụy và hết lòng vì học sinh, không chỉ truyền đạt kiến thức mà còn dạy chúng em cách sống, cách làm người và cách theo đuổi ước mơ. Những bài học của thầy cô không chỉ nằm trong trang sách mà còn theo chúng em suốt năm tháng trưởng thành.</p>
+    <p>Em kính chúc thầy cô luôn mạnh khỏe, hạnh phúc và tràn đầy nhiệt huyết với nghề. Chúc thầy cô luôn giữ được ngọn lửa đam mê, niềm tin vào thế hệ trẻ và tiếp tục gặt hái nhiều thành công trong sự nghiệp trồng người cao quý. Mong rằng những nỗ lực và cống hiến của thầy cô sẽ luôn được trân trọng, đền đáp bằng tình yêu thương và sự kính trọng của học trò.</p>
+    <div class="picture"><img src="pic1.jpg"><img src="pic2.jpg"></div>
+    <h3 class="sub-title">Kính gửi thầy Hiếu Trung</h3>
+    <p>Cảm ơn thầy vì đã luôn đồng hành cùng CLB Tin học chúng em trong suốt thời gian qua. Cảm ơn thầy vì luôn quan tâm, động viên và lo lắng cho những mầm non như chúng em. Nhân ngày Nhà giáo Việt Nam, kính chúc thầy thật nhiều sức khỏe, thành công trong công việc và tiếp tục đào tạo thêm nhiều “quả ngọt” cho trường ta nói riêng và đất nước Việt Nam nói chung.</p>
+    <p>Xin trân trọng cảm ơn thầy rất nhiều.</p>
+  </div>
+
+  <style>
+    .teacher-message {
+     padding-top:0px;
+     padding-bottom:0px;
+     backdrop-filter: blur(12px);
+     background: rgba(0,0,0,0.35);
+     color: #f7f7f7;
+     line-height: 1.75;
+     font-size: 30px;
+      font-family: "Merriweather", serif;
+     box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+     animation: fadeIn 0.9s ease;
+    }
+
+   .section-title {
+      font-family: "Dancing Script", cursive;
+     font-size: 40px;
+     text-align: center;
+     margin-bottom: 24px;
+     color: #ffe7a1;
+    text-shadow: 0 3px 12px rgba(0,0,0,0.6);
+   }
+
+   .sub-title {
+     font-size: 22px;
+     margin: 28px 0 10px;
+     color: #ffdd87;
+     font-weight: 600;
+     font-family: "Inter", sans-serif;
+     letter-spacing: 0.5px;
+   }
+
+   .teacher-message p {
+     margin-bottom: 16px;
+     text-align: justify;
+     text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+    }
+
+    @keyframes fadeIn {
+     from { opacity: 0; transform: translateY(20px); }
+     to { opacity: 1; transform: translateY(0); }
+    }
+
+
+   @media (max-width: 720px) {
+      .teacher-message {
+      padding: 26px 22px;
+      font-size: 16px;
+      }
+      .section-title {
+      font-size: 32px;
+      }
+    }
+    /*footage*/
+    .contact-bar {
+            background-color: #252525;
+            color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 800px;
+            margin: 50px auto; /* Căn giữa màn hình */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .contact-bar h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #ecf0f1;
+            text-transform: uppercase;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn-fb  { background-color: #1877f2; }   
+        .btn-email { background-color: #e74c3c; } 
+
+
+        @media (max-width: 600px) {
+            .buttons { flex-direction: column; }
+            .btn { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-bar">
+        <h3>Liên hệ & Hợp tác</h3>
+        <div class="buttons">
+            
+            <a href="https://www.facebook.com/thptndcnitclub" target="_blank" class="btn btn-fb">
+                <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+
+            <a href="mailto:ndcitclub@gmail.com" class="btn btn-email">
+                <i class="fa-solid fa-envelope"></i> ndcitclub@gmail.com
+            </a>
+            
+        </div>
+    </div>
+</body>
+</html>
